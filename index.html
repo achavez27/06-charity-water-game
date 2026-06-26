@@ -5,9 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charity Water Game</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Welcome to the Charity Water Game Prototype</h1>
-    <script src="script.js"></script>
+<div class="phone">
+    <header>
+        <div class="top-bar">
+            <img src="img/cw_logo_horizontal.png" alt="charity water logo" class="logo">
+            <button class="info-btn">ⓘ</button>
+        </div>
+        <h1>Village Rescue</h1>
+    </header>
+
+    <section class="stats">
+        <div class="stat-row">
+            <label>Health</label>
+            <div class="progress">
+                <div id="health-bar" class="health-fill"></div>
+                <span id="health-text">10 / 50</span>
+            </div>
+            <div class="money-box">$<span id="money">150</span></div>
+        </div>
+
+        <div class="stat-row">
+            <label>Water</label>
+            <div class="progress">
+                <div id="water-bar" class="water-fill"></div>
+                <span id="water-text">20 / 100</span>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="grid" id="grid">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </div>
+
+        <aside id="shop" class="shop">
+            <h2>Shop</h2>
+            <div class="shop-item">
+                <button class="building"></button>
+                <div class="item-info"><p>$15</p><p>+10 Water</p></div>
+            </div>
+            <div class="shop-item">
+                <button class="building"></button>
+                <div class="item-info"><p>$25</p><p>+20 Health</p></div>
+            </div>
+            <div class="shop-item">
+                <button class="building"></button>
+                <div class="item-info"><p>$50</p><p>+20 Water +10 Health</p></div>
+            </div>
+            <div class="shop-item">
+                <button class="building"></button>
+                <div class="item-info"><p>$75</p><p>+30 Water +20 Health</p></div>
+            </div>
+        </aside>
+
+        <aside id="info" class="info">
+            <button class="close-btn">✕</button>
+            <h2>How to Play</h2>
+            <div class="info-content">
+                <p><strong>Goal:</strong> Keep your village healthy and hydrated!</p>
+                <p><strong>Health:</strong> Your village needs supplies. Health decreases over time, especially if water is low.</p>
+                <p><strong>Water:</strong> Essential resource that keeps the village healthy. Water decreases every 3 seconds.</p>
+                <p><strong>Money:</strong> Use money to buy buildings. Each building provides health and water benefits.</p>
+                <p><strong>How to build:</strong> Click on a tile to select it, then choose a building from the shop.</p>
+                <p><strong>Game Over:</strong> When health reaches 0, the game ends!</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="socials">
+            <a href="#">@charitywater</a>
+            <a href="#">@charity:water</a>
+            <a href="#">@charitywater</a>
+        </div>
+        <p>Thinking of donating? <a href="https://www.charitywater.org" target="_blank">Learn more</a></p>
+    </footer>
+</div>
 </body>
 </html>
