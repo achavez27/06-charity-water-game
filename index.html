@@ -13,7 +13,10 @@
     <header>
         <div class="top-bar">
             <img src="img/cw_logo_horizontal.png" alt="charity water logo" class="logo">
-            <button class="info-btn">ⓘ</button>
+            <div class="top-bar-actions">
+                <button id="reset-btn" class="reset-btn">Reset</button>
+                <button class="info-btn">ⓘ</button>
+            </div>
         </div>
         <h1>Village Rescue</h1>
     </header>
@@ -36,6 +39,18 @@
             </div>
         </div>
     </section>
+
+    <div id="status-message" class="status-message" aria-live="polite">
+        Select a tile to begin building.
+    </div>
+
+    <div id="victory-modal" class="victory-modal" aria-live="polite">
+        <div class="victory-content">
+            <h2>Victory!</h2>
+            <p>Your village is fully healthy and thriving.</p>
+            <button id="victory-close-btn" class="victory-close-btn">Continue</button>
+        </div>
+    </div>
 
     <main>
         <div class="grid" id="grid">
@@ -93,9 +108,9 @@
 
     <footer>
         <div class="socials">
-            <a href="#">@charitywater</a>
-            <a href="#">@charity:water</a>
-            <a href="#">@charitywater</a>
+            <a href="https://www.instagram.com/charitywater/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.tiktok.com/@charitywater" target="_blank" rel="noopener noreferrer">TikTok</a>
+            <a href="https://www.facebook.com/charitywater" target="_blank" rel="noopener noreferrer">Facebook</a>
         </div>
         <p>Thinking of donating? <a href="https://www.charitywater.org" target="_blank">Learn more</a></p>
     </footer>

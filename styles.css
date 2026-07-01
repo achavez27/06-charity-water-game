@@ -29,7 +29,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: "Space Mono", monospace;
+    font-family: "Proxima Nova", "Proxima Nova Alt", "Arial", sans-serif;
 }
 
 
@@ -64,6 +64,12 @@ header {
     align-items: center;
 }
 
+.top-bar-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .logo {
     width: 120px;
 }
@@ -83,6 +89,22 @@ header {
     background: #FFC907;
 }
 
+.reset-btn {
+    border: 2px solid #159A48;
+    background: white;
+    color: #159A48;
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.reset-btn:hover {
+    background: #159A48;
+    color: white;
+}
+
 h1 {
     font-size: 34px;
 }
@@ -95,6 +117,60 @@ h1 {
 .stats {
     background: #8BD1CB;
     padding: 18px;
+}
+
+.status-message {
+    background: #fff;
+    color: #159A48;
+    text-align: center;
+    padding: 10px 14px;
+    font-weight: bold;
+    border-top: 2px solid #2E9DF7;
+    border-bottom: 2px solid #2E9DF7;
+}
+
+.victory-modal {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.victory-modal.open {
+    display: flex;
+}
+
+.victory-content {
+    background: white;
+    border: 4px solid #FFC907;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    width: 280px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.victory-content h2 {
+    color: #159A48;
+    margin-bottom: 10px;
+}
+
+.victory-content p {
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.victory-close-btn {
+    background: #2E9DF7;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .stat-row {
@@ -370,7 +446,8 @@ footer {
 
 .socials {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 24px;
     margin-bottom: 12px;
 }
 
